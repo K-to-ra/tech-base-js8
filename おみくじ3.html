@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="おみくじ3.css">
+	<title>はっぴぃみくじ</title>
+</head>
+<body>
+	<header>
+	<h1>はっぴぃみくじ</h1>
+	</header>
+
+	<!--ヘッダー以外を指定、あとでflexで分ける-->
+	<div id="content">
+		<!--メインのおみくじの結果-->
+		<main>
+			<h2><div id="omikuji">今日の運勢をうらなってみよう</div></h2>
+				<audio id="omikujigaragara" src="ガラガラ.mp3"></audio>
+			
+			<p><div id="okotoba">今日も良い日になりますように</div></p>
+			<h3><div id="luckyitem"> </div></h3>
+			<script src="おみくじ3.js"></script>
+
+		</main>
+
+		<!--おみくじを引くボタンや注意書き-->
+		<aside>
+			<p>！音が鳴ります！</p>
+			<div id="omikujiside">
+				<button onclick="omikujishow()">お<br>み<br>く<br>じ<br>を<br>引<br>く</button>
+			</div>
+
+		</aside>
+	</div>
+
+	<footer>
+		<p><small>適当なので真に受けないこと</small></p>
+	</footer>
+
+</body>
+</html>

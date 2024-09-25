@@ -1,0 +1,110 @@
+body{
+    background-color: antiquewhite;
+    font-family: "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+h1{
+    color: white;
+    background-color: brown;
+    font-family: "HGP江戸文字勘亭流", "游明朝", Arial, sans-serif;
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+header, footer {
+    width: 100%; /* 横いっぱいに広げる */
+}
+
+footer{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 0%;
+    margin-top:20px ;
+
+    position: fixed; /* フッターを画面の下部に固定 */
+    bottom: 0;
+    left: 0; /* 固定してるので位置を指定 */
+}
+
+#content{
+    /* contentは横並びにする */
+    display: flex;
+    justify-content: space-between; /* 要素間にスペースを配置 */
+    padding: 20px;
+    margin-bottom: 50px; /* フッターと被らないように余白を追加 */
+    gap: 20px; /* mainとasideの間に隙間を作る */
+}
+
+main{
+    width: 70%; /* 横幅70% */
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.16);
+
+	display: flex;           /* Flexboxを使用 */
+    justify-content: center; /* 水平方向の中央寄せ */
+    align-items: center;     /* 垂直方向の中央寄せ */
+    flex-direction: column;  /* 子要素を縦方向に並べる */
+}
+
+main h2{
+    font-family: "HGP江戸文字勘亭流", "游明朝", Arial, sans-serif;
+    font-size: 36px;
+    color: rgb(186, 61, 73);
+    background-color: white;
+    border: double 10px rgb(186, 61, 73);
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto 20px; /* h2を中央に揃え、下に余白を追加 */
+}
+
+main h3{
+    font-size: 24px;
+}
+
+aside{
+    width: 30%; /* 横幅30% */
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    background-image: url("格子柄.png");
+    background-repeat: repeat;
+    border-radius: 16px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.16);
+}
+
+aside button{
+    padding: 10px;
+    font-size: 30px;
+    font-family: "HGP江戸文字勘亭流", "游明朝", Arial, sans-serif;
+    background-color: #bca36d;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 120px;
+    height: 280px;
+    clip-path: polygon(
+        20% 0%,  /* 上左 */
+        80% 0%,  /* 上右 */
+        100% 20%, /* 右上 */
+        100% 80%, /* 右下 */
+        80% 100%, /* 下右 */
+        20% 100%, /* 下左 */
+        0% 80%,  /* 左下 */
+        0% 20%   /* 左上 */
+    );
+}
+
+aside button:hover{
+    background-color: #ac792d;
+}
